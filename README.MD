@@ -302,7 +302,7 @@ between in-corpus trained and cross-corpus trained models
 </tr>
 <tr class="odd">
 <td style="text-align: left;">BC2GN</td>
-<td style="text-align: center;">83.1 ()</td>
+<td style="text-align: center;">83.1</td>
 <td style="text-align: center;">81.7</td>
 <td style="text-align: center;">83.7</td>
 <td style="text-align: center;">82.6</td>
