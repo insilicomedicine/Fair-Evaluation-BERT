@@ -170,80 +170,10 @@ This table presents the summary statistics of corpora used in study.
 
 ##### Table 2
 
-This table shows differences in evaluation metrics on the refined and full test set of BioSyn and BERT ranking approaches.
+This plot shows differences in evaluation metrics on the refined and full test set of BioSyn and BERT ranking approaches.
 
-<table>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;" rowspan="2"><strong>Model</strong></td>
-<td style="text-align: center;" colspan="2"><strong>NCBI Disease</strong></td>
-<td style="text-align: center;" colspan="2"><strong>BC5CDR Dis</strong></td>
-<td style="text-align: center;" colspan="2"><strong>BC5CDR Chem</strong></td>
-<td style="text-align: center;" colspan="2"><strong>BC2GN Gene</strong></td>
-<td style="text-align: center;" colspan="2"><strong>TAC ADR</strong></td>
-<td style="text-align: center;" colspan="2"><strong>SMM4H ADR</strong></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">test</td>
-<td style="text-align: center;"><em>refined</em></td>
-<td style="text-align: center;">test</td>
-<td style="text-align: center;"><em>refined</em></td>
-<td style="text-align: center;">test</td>
-<td style="text-align: center;"><em>refined</em></td>
-<td style="text-align: center;">test</td>
-<td style="text-align: center;"><em>refined</em></td>
-<td style="text-align: center;">test</td>
-<td style="text-align: center;"><em>refined</em></td>
-<td style="text-align: center;">test</td>
-<td style="text-align: center;"><em>refined</em></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">BioSyn</td>
-<td style="text-align: center;">90.7</td>
-<td style="text-align: center;">72.5</td>
-<td style="text-align: center;">93.5</td>
-<td style="text-align: center;">74.1</td>
-<td style="text-align: center;">96.3</td>
-<td style="text-align: center;">83.8</td>
-<td style="text-align: center;">90.8</td>
-<td style="text-align: center;">85.8</td>
-<td style="text-align: center;">95.6</td>
-<td style="text-align: center;">83.2</td>
-<td style="text-align: center;">83.8</td>
-<td style="text-align: center;">60.5</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">BioBERT ranking</td>
-<td style="text-align: center;">83.9</td>
-<td style="text-align: center;">47.5</td>
-<td style="text-align: center;">91.3</td>
-<td style="text-align: center;">65.1</td>
-<td style="text-align: center;">94.7</td>
-<td style="text-align: center;">79.3</td>
-<td style="text-align: center;">74.7</td>
-<td style="text-align: center;">68.4</td>
-<td style="text-align: center;">87.8</td>
-<td style="text-align: center;">54.7</td>
-<td style="text-align: center;">33.9</td>
-<td style="text-align: center;">14.3</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><em>Difference</em></td>
-<td style="text-align: center;">-6.8</td>
-<td style="text-align: center;">-25.0</td>
-<td style="text-align: center;">-1.9</td>
-<td style="text-align: center;">-7.7</td>
-<td style="text-align: center;">-1.6</td>
-<td style="text-align: center;">-4.5</td>
-<td style="text-align: center;">-16.1</td>
-<td style="text-align: center;">-17.4</td>
-<td style="text-align: center;">-7.8</td>
-<td style="text-align: center;">-28.5</td>
-<td style="text-align: center;">-49.9</td>
-<td style="text-align: center;">-46.2</td>
-</tr>
-</tbody>
-</table>
+![](images/plot_splitted.png)
+
 
 ##### Table 3
 
@@ -452,4 +382,26 @@ $ python process_data.py --model_dir /data/pretrained_models/biobert_v1.1_pubmed
                          --data_folder /data/ncbi/processed_test \
                          --vocab /data/ncbi/test_dictionary.txt
 
+```
+
+## Citing & Authors
+Tutubalina E., Kadurin A., Miftahutdinov Z. Fair Evaluation in Concept Normalization: a Large-scale Comparative Analysis for BERT-based Models 
+//Proceedings of the 28th International Conference on Computational Linguistics. – 2020. – С. 6710-6716.[link](https://www.aclweb.org/anthology/2020.coling-main.588/)
+
+BibTex
+
+```
+@inproceedings{tutubalina-etal-2020-fair,
+    title = "Fair Evaluation in Concept Normalization: a Large-scale Comparative Analysis for {BERT}-based Models",
+    author = "Tutubalina, Elena  and
+      Kadurin, Artur  and
+      Miftahutdinov, Zulfat",
+    booktitle = "Proceedings of the 28th International Conference on Computational Linguistics",
+    month = dec,
+    year = "2020",
+    address = "Barcelona, Spain (Online)",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.coling-main.588",
+    pages = "6710--6716",
+ }
 ```
