@@ -168,16 +168,16 @@ This table presents the summary statistics of corpora used in study.
 </tbody>
 </table>
 
-##### Table 2
+##### Plot 1
 
 This plot shows differences in evaluation metrics on the refined and full test set of BioSyn and BERT ranking approaches.
 
 ![](images/plot_splitted.png)
 
 
-##### Table 3
+##### Table 2
 
-Tables 3 and 4 contain metrics on cross-terminology evaluation mode. Table 3 contains accuracies, Table 4 differences 
+Tables 2 and 3 contain metrics on cross-terminology evaluation mode. Table 3 contains accuracies, Table 4 differences 
 between in-corpus trained and cross-corpus trained models
 
 <table>
@@ -251,7 +251,7 @@ between in-corpus trained and cross-corpus trained models
 </tbody>
 </table>
 
-##### Table 4 
+##### Table 3 
 
 <table>
 <tbody>
