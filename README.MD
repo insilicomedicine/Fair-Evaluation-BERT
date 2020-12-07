@@ -1,12 +1,12 @@
 Fair Evaluation in Concept Normalization: a Large-scale Comparative Analysis for BERT-based Models
 ---
+This repository contains additional materials of our paper ["Fair Evaluation in Concept Normalization: a Large-scale Comparative Analysis for BERT-based Models"](https://www.aclweb.org/anthology/2020.coling-main.588.pdf). In biomedical research and healthcare, the entity linking problem is known as medical concept normalization (MCN). In this work, we perform a comparative evaluation of various benchmarks and study the efficiency of BERT-based models for linking of three entity types across three domains: research abstracts, drug labels, and usergenerated texts on drug therapy in English.
 
-<p style="text-align: center;">
-Overview: This repository contains additional materials of the paper "Fair Evaluation in Concept Normalization: a Large-scale ComparativeAnalysis for BERT-based Models"
-</p>
+## Evaluation & Results
 
-## Results
+Given predefined train/test splits of six biomedical datasets, we found out that app. 78\% entity mentions in the test set are textual duplicates of other entities in the test set or entities presented in train+dev sets. In order to obtain more realistic results, we present refined test sets without duplicates or exact overlaps (see Table 1). Please refer to our [paper](https://www.aclweb.org/anthology/2020.coling-main.588.pdf) for details.
 
+#### Single-terminology Evaluation on Refined Test Sets
 ##### Table 1
 
 This table presents the summary statistics of corpora used in study. 
@@ -168,17 +168,18 @@ This table presents the summary statistics of corpora used in study.
 </tbody>
 </table>
 
-##### Plot 1
+##### Figure 1
 
-This plot shows differences in evaluation metrics on the refined and full test set of BioSyn and BERT ranking approaches.
+This figure shows differences in evaluation metrics on the refined and full test set of BioSyn and BERT ranking approaches.
 
 ![](images/plot_splitted.png)
 
 
-##### Table 2
+#### Cross-terminology Evaluation on Refined Test Sets
+##### Tables 2 & 3
 
-Tables 2 and 3 contain metrics on cross-terminology evaluation mode. Table 3 contains accuracies, Table 4 differences 
-between in-corpus trained and cross-corpus trained models
+Tables 2 & 3 contain metrics on cross-terminology evaluation mode. 
+Table 2 shows performance of BioSyn on refined test sets in terms of accuracy@1; the numbers in bold print represent bert performance in a row.
 
 <table>
 <tbody>
@@ -252,6 +253,7 @@ between in-corpus trained and cross-corpus trained models
 </table>
 
 ##### Table 3 
+Table 3 shows differences in results between a given model and the in-domain model in parentheses (by row).
 
 <table>
 <tbody>
