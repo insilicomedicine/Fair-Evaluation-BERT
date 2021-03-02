@@ -380,7 +380,7 @@ To eval BioSyn trained models follow the [instructions](https://github.com/dmis-
 To eval the BERT ranking run the command:
 
 ```bash
-$ python process_data.py --model_dir /data/pretrained_models/biobert_v1.1_pubmed_pytorch/ \
+$ python eval_bert_ranking.py --model_dir /data/pretrained_models/biobert_v1.1_pubmed_pytorch/ \
                          --data_folder /data/ncbi/processed_test \
                          --vocab /data/ncbi/test_dictionary.txt
 
