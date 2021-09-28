@@ -8,7 +8,7 @@ def read_vocab(path: str) -> pd.DataFrame:
     data = []
     with open(path, encoding='utf-8') as input_stream:
         for line in input_stream:
-            data.append({'label': line.split('||')[0], 'text':line.strip().split('||')[1]})
+            data.append({'label': line.split('||')[0], 'concept_name':line.strip().split('||')[1]})
     return pd.DataFrame(data)
 
 
